@@ -1,7 +1,6 @@
 
 # Flutter-NotificationCenter
 
-[![build status](https://img.shields.io/travis/flutterchina/Flutter-NotificationCenter/vm.svg?style=flat-square)](https://travis-ci.org/flutterchina/Flutter-NotificationCenter)
 [![Pub](https://img.shields.io/pub/v/notification_center.svg?style=flat-square)](https://pub.dartlang.org/packages/notification_center)
 [![support](https://img.shields.io/badge/platform-flutter%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/netyouli/Flutter-NotificationCenter)
 [![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/netyouli/Flutter-NotificationCenter/master/LICENSE)

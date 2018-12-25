@@ -1,0 +1,9 @@
+name: notification_center
+description: A lightweight, easy-to-use notification component library that corresponds to Dart supports post notification listening for notifications and notification removal
+version: 0.0.1
+homepage: https://github.com/netyouli/Flutter-NotificationCenter
+author: netyouli <712641411@qq.com>
+
+environment:
+  sdk: '>=1.9.0 <3.0.0'
+

@@ -77,15 +77,19 @@ class NotificationCenter {
                 NotificationCenter._default._observerMap.remove(key);
             }else {
                 final keys = NotificationCenter._default._observerMap.keys;
+                final List<String> keysToRemove = [];
+                
                 for (var key in keys) {
                     final array = key.split(NotificationCenter._default._segmentKey);
                     if (array.length == 2) {
                         final hasCode = array[1];
                         if (hasCode == observer.hashCode.toString()) {
-                            NotificationCenter._default._observerMap.remove(key);
+                            keysToRemove.add(key);
                         }
                     }
                 }
+                
+                NotificationCenter._default._observerMap.removeWhere((key, value) => keysToRemove.contains(key));
             }
         }
     }

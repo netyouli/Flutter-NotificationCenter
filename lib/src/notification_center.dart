@@ -56,11 +56,9 @@ class NotificationCenter {
   static void addObserver({
     required Object observer,
     required String name,
-    void Function(Object param)? block,
+    void Function(Object? param)? block,
   }) {
-    final key = name +
-        NotificationCenter._default._segmentKey +
-        observer.hashCode.toString();
+    final key = name + NotificationCenter._default._segmentKey + observer.hashCode.toString();
     NotificationCenter._default._observerMap[key] = block;
   }
 
@@ -74,9 +72,7 @@ class NotificationCenter {
     String? name,
   }) {
     if (name != null) {
-      final key = name +
-          NotificationCenter._default._segmentKey +
-          observer.hashCode.toString();
+      final key = name + NotificationCenter._default._segmentKey + observer.hashCode.toString();
       NotificationCenter._default._observerMap.remove(key);
     } else {
       final keys = NotificationCenter._default._observerMap.keys;
@@ -92,8 +88,7 @@ class NotificationCenter {
         }
       }
 
-      NotificationCenter._default._observerMap
-          .removeWhere((key, value) => keysToRemove.contains(key));
+      NotificationCenter._default._observerMap.removeWhere((key, value) => keysToRemove.contains(key));
     }
   }
 
